@@ -20,3 +20,11 @@ A fast, multithreaded port scanner built with Python. This tool scans the first 
 ```bash
 git clone https://github.com/soumikdas07/port-scanner.git
 cd port-scanner
+
+python scanner.py
+
+Enter target IP or domain: scanme.nmap.org
+Scanning scanme.nmap.org for open ports (1-1024)...
+[+] Port 80 is open
+[+] Port 22 is open
+
