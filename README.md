@@ -20,11 +20,27 @@ A fast, multithreaded port scanner built with Python. This tool scans the first 
 ```bash
 git clone https://github.com/soumikdas07/port-scanner.git
 cd port-scanner
+```
 
+### 2. Run the Script
+
+```bash
 python scanner.py
+```
 
+### 3. Sample Output
+
+```bash
 Enter target IP or domain: scanme.nmap.org
 Scanning scanme.nmap.org for open ports (1-1024)...
 [+] Port 80 is open
 [+] Port 22 is open
+```
 
+## ⚙️ How It Works
+
+```bash
+- The script uses Python's `socket` module to try connecting to ports 1–1024.
+- It uses `concurrent.futures.ThreadPoolExecutor` to scan ports in parallel.
+- If a port responds (connection successful), it's reported as open.
+```
